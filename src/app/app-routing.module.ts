@@ -14,7 +14,9 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'search-kanji', loadChildren: './search-kanji/search-kanji.module#SearchKanjiPageModule' },
+  { path: 'kanji-lesson/:level', loadChildren: './kanji-lession/kanji-lession.module#KanjiLessionPageModule' }
 ];
 
 @NgModule({
